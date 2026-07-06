@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bagas Rudianto Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div id="progress"></div>
+
+  <!-- Starfield Background -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ── NAVIGATION ── -->
+  <nav>
+    <a href="#hero" class="nav-logo">BAGAS</a>
+    <button id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#interests">Interests</a></li>
+      <li><a href="#goals">Goals</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="hero-text">
+      <p class="hero-eyebrow">Welcome to my portfolio</p>
+      <h1 class="hero-name">
+        <span class="glow-text">BAGAS</span>
+        <span class="hero-lastname">RUDIANTO</span>
+      </h1>
+      <p class="hero-role">Web Developer &amp; Cybersecurity Enthusiast</p>
+      <p class="hero-desc">
+        Membangun fondasi kuat di dunia teknologi dari web development hingga
+        cybersecurity. Setiap baris kode adalah langkah menuju versi terbaik
+        dari diri sendiri.
+      </p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn btn-primary">Connect With Me</a>
+        <a href="#skills" class="btn btn-outline">Explore Skills</a>
+      </div>
+    </div>
+
+    <div class="hero-photo-wrap">
+      <div class="photo-ring-outer">
+        <div class="photo-dots"></div>
+        <div class="photo-inner">
+          <img src="assets/photo.jpg" alt="Bagas Radianto" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about">
+    <div class="reveal">
+      <p class="section-label">About Me</p>
+      <h2 class="section-title">Tentang Saya</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="about-grid reveal">
+      <div class="about-text">
+        <p>
+          Saya adalah seseorang yang sedang membangun fondasi di dunia teknologi,
+          dengan fokus utama pada <strong>web development</strong> dan
+          <strong>cybersecurity</strong>. Saya masih berada di tahap belajar,
+          tapi punya komitmen untuk berkembang secara konsisten dari dasar
+          sampai benar-benar siap masuk ke dunia kerja nyata.
+        </p>
+        <p>
+          Saya mulai tertarik pada dunia IT karena teknologi adalah skill masa
+          depan yang bisa membuka banyak peluang baik untuk kerja freelance,
+          remote job, maupun membangun sesuatu sendiri.
+        </p>
+        <p>
+          Saat ini saya sedang membangun pemahaman dari dasar: cara kerja web,
+          struktur sistem, hingga keamanan dasar di internet. Saya tidak hanya
+          ingin sekadar "tahu", tapi ingin benar-benar paham dan bisa membuat
+          sesuatu yang berguna.
+        </p>
+      </div>
+
+      <div class="about-card">
+        <p class="about-card-status">STATUS: ACTIVE LEARNER</p>
+        <div class="about-card-rows">
+          <div class="card-row">
+            <p class="card-row-label">FOKUS</p>
+            <p class="card-row-value">Web Development &amp; Cybersecurity</p>
+          </div>
+          <div class="card-row">
+            <p class="card-row-label">MODE</p>
+            <p class="card-row-value">Autodidak + Formal Education</p>
+          </div>
+          <div class="card-row">
+            <p class="card-row-label">TARGET</p>
+            <p class="card-row-value">Full Stack Developer + Security Basics</p>
+          </div>
+          <div class="card-row">
+            <p class="card-row-label">LOKASI</p>
+            <p class="card-row-value">Indonesia 🇮🇩</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section id="skills">
+    <div class="reveal">
+      <p class="section-label">Skills</p>
+      <h2 class="section-title">Skill Yang Dipelajari</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="skills-grid">
+
+      <div class="skill-card reveal">
+        <div class="skill-icon">⟨/⟩</div>
+        <p class="skill-title">Web Development</p>
+        <ul class="skill-items">
+          <li>HTML Struktur website</li>
+          <li>CSS Desain &amp; layout</li>
+          <li>JavaScript Interaksi website</li>
+          <li>Git &amp; GitHub Version control</li>
+        </ul>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon">🔒</div>
+        <p class="skill-title">Cybersecurity</p>
+        <ul class="skill-items">
+          <li>Sistem jaringan dasar</li>
+          <li>Keamanan web dasar</li>
+          <li>Vulnerability sederhana</li>
+          <li>Ethical hacking eksplorasi</li>
+        </ul>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon">📱</div>
+        <p class="skill-title">Mobile App Dev</p>
+        <ul class="skill-items">
+          <li>Konsep mobile development</li>
+          <li>Android &amp; iOS perbedaan</li>
+          <li>Dasar UI/UX mobile</li>
+          <li>Flutter / React Native eksplorasi</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── INTERESTS ── -->
+  <section id="interests">
+    <div class="reveal">
+      <p class="section-label">Interests &amp; Hobbies</p>
+      <h2 class="section-title">Minat &amp; Hobi</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="interests-grid">
+
+      <div class="interest-block reveal">
+        <h3><span>💡</span> Minat Teknologi</h3>
+        <ul>
+          <li>Eksplorasi cara kerja sistem digital</li>
+          <li>Cara website dibangun dari nol</li>
+          <li>Ethical hacking &amp; cybersecurity</li>
+          <li>Meningkatkan diri lewat rutinitas &amp; disiplin</li>
+        </ul>
+      </div>
+
+      <div class="interest-block reveal">
+        <h3><span>🎮</span> Hobi</h3>
+        <ul>
+          <li>Mengutak-atik komputer</li>
+          <li>Mencoba hal baru di internet</li>
+          <li>Belajar otodidak dari berbagai sumber</li>
+          <li>Eksplorasi ide proyek kecil di coding</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── GOALS ── -->
+  <section id="goals">
+    <div class="reveal">
+      <p class="section-label">Goals</p>
+      <h2 class="section-title">Impian &amp; Tujuan</h2>
+      <div class="divider"></div>
+    </div>
+    <p class="goals-intro reveal">
+      Tujuan jangka panjang: menjadi <strong>full stack web developer</strong>
+      yang juga memahami dasar cybersecurity mandiri, berdampak, dan terus
+      berkembang.
+    </p>
+    <div class="goals-list">
+      <div class="goal-item reveal">
+        <span class="goal-num">01</span>
+        <p>Membangun website dan aplikasi sendiri dari nol tanpa bergantung pada template atau shortcut.</p>
+      </div>
+      <div class="goal-item reveal">
+        <span class="goal-num">02</span>
+        <p>Bekerja secara freelance atau remote di bidang teknologi dan meraih kebebasan finansial dari skill digital.</p>
+      </div>
+      <div class="goal-item reveal">
+        <span class="goal-num">03</span>
+        <p>Menguasai skill yang benar-benar bisa dipakai di dunia nyata bukan sekadar teori atau sertifikat.</p>
+      </div>
+      <div class="goal-item reveal">
+        <span class="goal-num">04</span>
+        <p>Membangun kehidupan yang lebih mandiri dan berdampak lewat kemampuan teknologi yang solid.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact">
+    <div class="reveal contact-inner">
+      <p class="section-label">Connect</p>
+      <h2 class="section-title">Let's Connect</h2>
+      <div class="divider" style="margin: 1rem auto 2rem;"></div>
+      <p class="contact-desc">
+        Tertarik untuk berkolaborasi, berdiskusi tentang teknologi, atau sekadar
+        menyapa? Temukan saya di platform berikut.
+      </p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/bagasrr___?igsh=MWx2ZWlpYWJ3NGo1MQ==" target="_blank" class="social-link">
+          <span class="social-icon">📸</span> Instagram
+        </a>
+        <a href="https://github.com/Basss098" target="_blank" class="social-link">
+          <span class="social-icon">🐙</span> GitHub
+        </a>
+        <a href="https://drive.google.com/drive/folders/1vg-s86gv9RLaBFeXZjmNbpFrvIwnUs4c?usp=drive_link" target="_blank" class="social-link">
+          <span class="social-icon">📁</span> Portfolio
+        </a>
+        <a href="https://www.linkedin.com/in/bagas-rudianto-6a1258420/" target="_blank" class="social-link">
+          <span class="social-icon">💼</span> LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <p>© 2026 Bagas Rudianto — Built with passion &amp; pixels</p>
+    <p class="footer-glow">KEEP BUILDING</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
